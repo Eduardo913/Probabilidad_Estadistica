@@ -14,6 +14,7 @@ class ControllerContinuas(QMainWindow):
         self.datos = datos
         self.inicializar_vista()
         self.grafica()
+        self.ui.Volver.clicked.connect(self.close)
 
 
     def inicializar_vista(self):

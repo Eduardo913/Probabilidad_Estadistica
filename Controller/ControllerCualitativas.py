@@ -13,6 +13,7 @@ class ControllerCualitativas(QMainWindow):
         self.datos = datos
         self.inicializar_vista()
         self.grafica()
+        self.ui.Volver.clicked.connect(self.close)
 
     def inicializar_vista(self):
         self.llenar_tablas(self.ui.tableCualitativas, self.datos)

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'View/viewContinuas.ui'
+# Form implementation generated from reading ui file 'viewContinuas.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -255,6 +255,19 @@ class Ui_Principal(object):
         self.textDesviacionAgrupado.setGeometry(QtCore.QRect(620, 510, 113, 21))
         self.textDesviacionAgrupado.setStyleSheet("color: rgb(255, 255, 255);")
         self.textDesviacionAgrupado.setObjectName("textDesviacionAgrupado")
+        self.Volver = QtWidgets.QPushButton(self.frame)
+        self.Volver.setGeometry(QtCore.QRect(710, 10, 121, 21))
+        self.Volver.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Volver.setStyleSheet("background-color: rgba(30, 215, 96,0.65);\n"
+"color: white;\n"
+"font:bold;\n"
+"\n"
+"")
+        self.Volver.setCheckable(False)
+        self.Volver.setChecked(False)
+        self.Volver.setDefault(True)
+        self.Volver.setFlat(False)
+        self.Volver.setObjectName("Volver")
         self.horizontalLayout.addWidget(self.frame)
         Principal.setCentralWidget(self.centralwidget)
 
@@ -294,6 +307,7 @@ class Ui_Principal(object):
         self.label_15.setText(_translate("Principal", "Moda:"))
         self.label_16.setText(_translate("Principal", "Varianza Poblacional:"))
         self.label_17.setText(_translate("Principal", "Desvicacion Estandar"))
+        self.Volver.setText(_translate("Principal", "Volver"))
 from Model.mplwidget import MplWidget
 
 

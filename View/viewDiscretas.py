@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'View/viewDiscretas.ui'
+# Form implementation generated from reading ui file 'viewDiscretas.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -154,6 +154,19 @@ class Ui_Principal(object):
         self.label_7.setFont(font)
         self.label_7.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_7.setObjectName("label_7")
+        self.Volver = QtWidgets.QPushButton(self.frame)
+        self.Volver.setGeometry(QtCore.QRect(700, 20, 121, 21))
+        self.Volver.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Volver.setStyleSheet("background-color: rgba(30, 215, 96,0.65);\n"
+"color: white;\n"
+"font:bold;\n"
+"\n"
+"")
+        self.Volver.setCheckable(False)
+        self.Volver.setChecked(False)
+        self.Volver.setDefault(True)
+        self.Volver.setFlat(False)
+        self.Volver.setObjectName("Volver")
         self.horizontalLayout.addWidget(self.frame)
         Principal.setCentralWidget(self.centralwidget)
 
@@ -179,6 +192,7 @@ class Ui_Principal(object):
         item = self.tableFrecuencia.horizontalHeaderItem(2)
         item.setText(_translate("Principal", "Frecuencia Relativa"))
         self.label_7.setText(_translate("Principal", "Datos obtenidos"))
+        self.Volver.setText(_translate("Principal", "Volver"))
 from Model.mplwidget import MplWidget
 
 

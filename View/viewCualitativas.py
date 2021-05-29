@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'View/viewCualitativas.ui'
+# Form implementation generated from reading ui file 'viewCualitativas.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -32,7 +32,7 @@ class Ui_Principal(object):
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.tableCualitativas = QtWidgets.QTableWidget(self.frame)
-        self.tableCualitativas.setGeometry(QtCore.QRect(40, 10, 125, 561))
+        self.tableCualitativas.setGeometry(QtCore.QRect(10, 10, 125, 561))
         self.tableCualitativas.setStyleSheet("background-color: rgb(198, 198, 198);\n"
 "color: rgb(50, 50, 50);")
         self.tableCualitativas.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
@@ -59,11 +59,11 @@ class Ui_Principal(object):
         self.tableCualitativas.verticalHeader().setSortIndicatorShown(True)
         self.tableCualitativas.verticalHeader().setStretchLastSection(False)
         self.MplWidget = MplWidget(self.frame)
-        self.MplWidget.setGeometry(QtCore.QRect(210, 270, 461, 301))
+        self.MplWidget.setGeometry(QtCore.QRect(140, 270, 461, 301))
         self.MplWidget.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.MplWidget.setObjectName("MplWidget")
         self.tableFrecuencia = QtWidgets.QTableWidget(self.frame)
-        self.tableFrecuencia.setGeometry(QtCore.QRect(210, 10, 461, 241))
+        self.tableFrecuencia.setGeometry(QtCore.QRect(140, 10, 461, 241))
         self.tableFrecuencia.setStyleSheet("background-color: rgb(198, 198, 198);\n"
 "color: rgb(50, 50, 50);")
         self.tableFrecuencia.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
@@ -81,6 +81,19 @@ class Ui_Principal(object):
         self.tableFrecuencia.horizontalHeader().setStretchLastSection(True)
         self.tableFrecuencia.verticalHeader().setVisible(False)
         self.tableFrecuencia.verticalHeader().setHighlightSections(True)
+        self.Volver = QtWidgets.QPushButton(self.frame)
+        self.Volver.setGeometry(QtCore.QRect(620, 10, 121, 21))
+        self.Volver.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Volver.setStyleSheet("background-color: rgba(30, 215, 96,0.65);\n"
+"color: white;\n"
+"font:bold;\n"
+"\n"
+"")
+        self.Volver.setCheckable(False)
+        self.Volver.setChecked(False)
+        self.Volver.setDefault(True)
+        self.Volver.setFlat(False)
+        self.Volver.setObjectName("Volver")
         self.horizontalLayout.addWidget(self.frame)
         Principal.setCentralWidget(self.centralwidget)
 
@@ -98,6 +111,7 @@ class Ui_Principal(object):
         item.setText(_translate("Principal", "Frecuencia Absoluta"))
         item = self.tableFrecuencia.horizontalHeaderItem(2)
         item.setText(_translate("Principal", "Frecuencia Relativa"))
+        self.Volver.setText(_translate("Principal", "Volver"))
 from Model.mplwidget import MplWidget
 
 
