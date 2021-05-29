@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'viewDiscretas.ui'
+# Form implementation generated from reading ui file 'View/viewDiscretas.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -167,6 +167,15 @@ class Ui_Principal(object):
         self.Volver.setDefault(True)
         self.Volver.setFlat(False)
         self.Volver.setObjectName("Volver")
+        self.Sesgo = QtWidgets.QLineEdit(self.frame)
+        self.Sesgo.setEnabled(False)
+        self.Sesgo.setGeometry(QtCore.QRect(580, 360, 113, 21))
+        self.Sesgo.setStyleSheet("color: rgb(255, 255, 255);")
+        self.Sesgo.setObjectName("Sesgo")
+        self.label_18 = QtWidgets.QLabel(self.frame)
+        self.label_18.setGeometry(QtCore.QRect(580, 340, 121, 16))
+        self.label_18.setStyleSheet("color: rgb(255, 255, 255);")
+        self.label_18.setObjectName("label_18")
         self.horizontalLayout.addWidget(self.frame)
         Principal.setCentralWidget(self.centralwidget)
 
@@ -193,6 +202,7 @@ class Ui_Principal(object):
         item.setText(_translate("Principal", "Frecuencia Relativa"))
         self.label_7.setText(_translate("Principal", "Datos obtenidos"))
         self.Volver.setText(_translate("Principal", "Volver"))
+        self.label_18.setText(_translate("Principal", "Sesgo:"))
 from Model.mplwidget import MplWidget
 
 

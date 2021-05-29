@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'viewContinuas.ui'
+# Form implementation generated from reading ui file 'View/viewContinuas.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -268,6 +268,15 @@ class Ui_Principal(object):
         self.Volver.setDefault(True)
         self.Volver.setFlat(False)
         self.Volver.setObjectName("Volver")
+        self.Sesgo = QtWidgets.QLineEdit(self.frame)
+        self.Sesgo.setEnabled(False)
+        self.Sesgo.setGeometry(QtCore.QRect(680, 120, 113, 21))
+        self.Sesgo.setStyleSheet("color: rgb(255, 255, 255);")
+        self.Sesgo.setObjectName("Sesgo")
+        self.label_18 = QtWidgets.QLabel(self.frame)
+        self.label_18.setGeometry(QtCore.QRect(680, 100, 121, 16))
+        self.label_18.setStyleSheet("color: rgb(255, 255, 255);")
+        self.label_18.setObjectName("label_18")
         self.horizontalLayout.addWidget(self.frame)
         Principal.setCentralWidget(self.centralwidget)
 
@@ -308,6 +317,7 @@ class Ui_Principal(object):
         self.label_16.setText(_translate("Principal", "Varianza Poblacional:"))
         self.label_17.setText(_translate("Principal", "Desvicacion Estandar"))
         self.Volver.setText(_translate("Principal", "Volver"))
+        self.label_18.setText(_translate("Principal", "Sesgo:"))
 from Model.mplwidget import MplWidget
 
 

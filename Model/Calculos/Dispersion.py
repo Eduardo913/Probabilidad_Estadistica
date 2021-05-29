@@ -25,8 +25,6 @@ class Dispersion:
             media = self.__mediaAritmetica
             error = []
             for valor in listDatos:
-                print(valor)
-                print(media)
                 error.append(round(valor-media,2))
         return error
 

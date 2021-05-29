@@ -25,6 +25,7 @@ class ControllerDiscretas(QMainWindow):
         self.ui.TextMediaTruncada.setText(str(tendencia.mediaRecortada()))
         self.ui.TextMediana.setText(str(tendencia.mediana()))
         self.ui.TextModa.setText(str(tendencia.moda()))
+        self.ui.Sesgo.setText(str(tendencia.sesgo()))
 
         dispersion = Dispersion(self.datos, tendencia.mediaAritmetica())
         self.ui.textVarianza.setText(str(dispersion.get_varianza_poblacional()))

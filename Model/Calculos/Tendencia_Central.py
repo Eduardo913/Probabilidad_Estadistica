@@ -32,3 +32,20 @@ class Tendencia_Central:
         datos = self._datos.copy() if self._datos is not None else None
         moda = statistics.multimode(datos) if datos is not None else None
         return moda
+
+    def sesgo(self):
+        media = self.mediaAritmetica()
+        mediana = self.mediana()
+        aux = self.moda()
+        moda = stats.tmean(aux) if aux is not None else None
+        sesgo = None
+        if media is not None and mediana is not None and moda is not None:
+            if media < mediana < moda:
+                sesgo = "A la Izquierda"
+            elif media == mediana == moda:
+                sesgo = "Simetrico"
+            else:
+                if media > mediana > moda:
+                    sesgo = "A la Derecha"
+        return sesgo
+
