@@ -1,6 +1,4 @@
 import  pandas as pd
-from numpy import double
-
 
 class ReadingFiles:
 
@@ -29,8 +27,8 @@ class ReadingFiles:
         return [valor for valor in self._archivo_csv['Genero de musica más escuchado']]
 
     def generar_lista_cuantitativa(self):
-        return [double("{0:.3f}".format(valor))for valor in self._archivo_csv['tiempo dedicado a escuchar música (Horas)']]
+        return [float("{0:.3f}".format(valor))for valor in self._archivo_csv['tiempo dedicado a escuchar música (Horas)']]
 
     def generar_lista_discreta(self):
-        return [double("{0:.3f}".format(valor))for valor in self._archivo_csv['Canciones escuchadas al día']]
+        return [float("{0:.3f}".format(valor))for valor in self._archivo_csv['Canciones escuchadas al día']]
 

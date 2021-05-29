@@ -37,9 +37,11 @@ class ControllerDiscretas(QMainWindow):
             fila = 0
             columna = 0
             for registro in datos:
-                self.tables[self.tables.index(table)].insertRow(fila)
+                # self.tables[self.tables.index(table)].insertRow(fila)
+                self.ui.tableDiscretas.insertRow(fila)
                 celda = QTableWidgetItem(str(registro))
-                self.tables[self.tables.index(table)].setItem(fila, columna, celda)
+                # self.tables[self.tables.index(table)].setItem(fila, columna, celda)
+                self.ui.tableDiscretas.setItem(fila,columna,celda)
                 fila += 1
 
     def llenar_tabla_frecuencia(self, table, datos = []):

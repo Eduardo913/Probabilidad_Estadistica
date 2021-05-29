@@ -10,6 +10,16 @@ def generarListaBarras(datos = []):
         values.append(datos[i][1])
     return label,values
 
+def generarListaPastel(datos = []):
+    label = []
+    values = []
+    datos = datos.copy() if datos is not None else None
+
+    for i in range(len(datos)):
+        label.append(str(datos[i][0]))
+        values.append(datos[i][1])
+    return label,values
+
 def __eliminar_repetidos(datos = []):
     lista = []
     if datos != None:

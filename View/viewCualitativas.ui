@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>859</width>
-    <height>674</height>
+    <width>765</width>
+    <height>605</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -41,238 +41,13 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QLabel" name="label_4">
+      <widget class="QTableWidget" name="tableCualitativas">
        <property name="geometry">
         <rect>
-         <x>710</x>
-         <y>80</y>
-         <width>91</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>Mediana:</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="textDesviacion">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>710</x>
-         <y>200</y>
-         <width>113</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="textVarianza">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>580</x>
-         <y>200</y>
-         <width>113</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>580</x>
-         <y>80</y>
-         <width>111</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>Media Truncada 10%:</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="TextMediaArtimetica">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>580</x>
-         <y>50</y>
-         <width>113</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_5">
-       <property name="geometry">
-        <rect>
-         <x>580</x>
-         <y>130</y>
-         <width>91</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>Moda:</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_6">
-       <property name="geometry">
-        <rect>
-         <x>580</x>
-         <y>180</y>
-         <width>111</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>Varianza</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="TextMediaTruncada">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>580</x>
-         <y>100</y>
-         <width>113</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-color: rgb(255, 255, 255);</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_8">
-       <property name="geometry">
-        <rect>
-         <x>710</x>
-         <y>180</y>
-         <width>121</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>Desviación Estandar</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>710</x>
-         <y>30</y>
-         <width>91</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>Media Geometrica:</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label">
-       <property name="geometry">
-        <rect>
-         <x>580</x>
-         <y>30</y>
-         <width>81</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>Media Aritmetica:</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="TextMediaGeometrica">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>710</x>
-         <y>50</y>
-         <width>113</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="TextMediana">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>710</x>
-         <y>100</y>
-         <width>113</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="TextModa">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>580</x>
-         <y>150</y>
-         <width>113</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-      </widget>
-      <widget class="QTableWidget" name="tableDiscretas">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
+         <x>40</x>
          <y>10</y>
          <width>125</width>
-         <height>631</height>
+         <height>561</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -335,7 +110,7 @@ color: rgb(50, 50, 50);</string>
        </attribute>
        <column>
         <property name="text">
-         <string>Discretos</string>
+         <string>Cualitativos</string>
         </property>
         <property name="textAlignment">
          <set>AlignLeading|AlignVCenter</set>
@@ -345,7 +120,7 @@ color: rgb(50, 50, 50);</string>
       <widget class="MplWidget" name="MplWidget" native="true">
        <property name="geometry">
         <rect>
-         <x>150</x>
+         <x>210</x>
          <y>270</y>
          <width>461</width>
          <height>301</height>
@@ -358,10 +133,10 @@ color: rgb(50, 50, 50);</string>
       <widget class="QTableWidget" name="tableFrecuencia">
        <property name="geometry">
         <rect>
-         <x>150</x>
-         <y>30</y>
-         <width>411</width>
-         <height>211</height>
+         <x>210</x>
+         <y>10</y>
+         <width>461</width>
+         <height>241</height>
         </rect>
        </property>
        <property name="styleSheet">
